@@ -52,6 +52,8 @@ contract Pool is Ownable, KeeperCompatible {
         0x0010675ab6235F2499Db2eA009Fd1901C4FBB65b
     ];
 
+    address constant teamAddress = 0x203560aCa0Aa5AAc09d9708CE29b60Aa3E4366A8;
+
     function depositTokens(uint amount, uint index) public {
         address tokenAddr = tokenAddresses[index];
         uint decimal = IERC20Extended(tokenAddr).decimals();
@@ -82,12 +84,15 @@ contract Pool is Ownable, KeeperCompatible {
 
     function transferAvaxDonations() external onlyOwner {
         uint donation_count = donationList.length;
-        uint AvaxDonationPerParticipants = address(this).balance / donation_count;
+        uint AvaxDonationPerParticipants = (address(this).balance / donation_count) * 50 / 100;
 
         for (uint i=0; i < donation_count; i++) {
-           (bool sent, )=address(donationList[i]).call{value: AvaxDonationPerParticipants}("");
-           require(sent, "AVAX not sent");
+           (bool sentA, ) = address(donationList[i]).call{value: AvaxDonationPerParticipants}("");
+           require(sentA, "AVAX not sent");
         }
+
+        (bool sentB, ) = teamAddress.call{value: AvaxDonationPerParticipants}("");
+        require(sentB, "AVAX not sent");
     }
 
     function getLatestPrice(uint index) public view returns (int) {
