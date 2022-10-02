@@ -47,7 +47,7 @@
 .kirinti_navbar-menu_container button {
    padding: 0.5rem 2 rem;
    color: #fff;
-   background: #FF4820;
+   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
    font-family: var(--font-family);
    font-weight: 600;
    font-size: 18px;
