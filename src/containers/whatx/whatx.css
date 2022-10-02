@@ -1,0 +1,234 @@
+.LaunchingProjects-Container {
+    display: flex;
+    position: relative;
+    
+}
+.LaunchingProjects__Background__Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.LaunchingProjects {
+    position: relative;
+    z-index: 99999;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+    max-width: 1280px;
+    width: 100%;
+}
+.LaunchingProjects .LaunchpadProjects-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "IntegralCF-ExtraBold",sans-serif;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.ProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 2rem;
+    background-color: transparent;
+}
+.LaunchingProjects .ProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 2rem;
+}
+.LaunchpadProject {
+    position: relative;
+    z-index: 99999;
+    background: rgb(2, 69, 135);
+    box-shadow: 0 0 1.25rem rgb(255 0 0 / 10%);
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 34px 72px -3px rgba(23,23,23,0.72);
+    -webkit-box-shadow: 0px 34px 72px -3px rgba(23,23,23,0.72);
+    -moz-box-shadow: 0px 34px 72px -3px rgba(23,23,23,0.72);
+}
+.LaunchpadProject-Head {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    overflow: hidden;
+    border-radius: 2rem 2rem 0 0;
+    
+}
+.LaunchpadProject-Head-Text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 0 2rem 1rem;
+    color: #fff;
+}
+.LaunchpadProject-Body {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    -webkit-transform: translate(0, -1.5rem);
+    transform: translate(0, -1.5rem);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.LaunchpadProject-Body--Top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.LaunchpadProject-Body--Top--Raised--Para {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #74818d;
+}
+.LaunchpadProject-Body--Top--Raised--Price {
+    font-family: "IntegralCF-ExtraBold",sans-serif;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    word-break: break-all;
+}
+.LaunchpadProject-Body--Progress {
+    margin-top: 3.5rem;
+    position: relative;
+}
+.progress_bar_tag {
+    position: absolute;
+    width: 1px;
+    min-width: 1px;
+    border-radius: 2px;
+    height: 20px;
+    background-color: #74818d;
+    bottom: calc(100% - 10px);
+    z-index: 1;
+}
+.progress_bar_tag p {
+    margin: 0;
+    background-color: transparent;
+    font-size: 1.1rem !important;
+    position: absolute;
+    left: calc(100% - 18px);
+    bottom: 100%;
+    color: #74818d;
+}
+.LaunchpadProject-Body--Progress--Background {
+    height: 25px;
+    width: 100%;
+    background-color: #9daab6;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    overflow: hidden;
+}
+.LaunchpadProject-Body--Progress--Background--Percents {
+    color: #fff;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+.LaunchpadProject-Body--Progress--Background .seed_indicator {
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%)
+}
+.seed_indicator{
+    width: 50%;
+}
+.StatsSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 2rem;
+    background: #ffffff;
+}
+.LaunchpadProject-Body--Info {
+    background: #fff;
+    box-shadow: 0 0 1.25rem rgb(255 0 0 / 10%);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.LaunchpadProject-Body--Info .Row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+.LaunchpadProject-Body--Info .Row-Left {
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 0.5rem;
+    margin-right: 10px;
+
+}
+.LaunchpadProject-Body--Info .Row-Line {
+    flex-grow: 1;
+    align-self: flex-end;
+    border-bottom: 1px solid #e6ecf1;
+}
+.font-weight{
+    font-weight: 400;
+}
+.LaunchpadProject-Body--LaunchInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.LaunchpadProject-Body--LaunchInfo .Half {
+    display: flex;
+}
+.LaunchpadProject-Body--LaunchInfo .SmallInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 14px;
+}
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+#search-button {
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border-width: 0px;
+    border-color: white;
+    border-radius: 32px;
+}
+
+      
+#search-button svg {
+    
+   
+}

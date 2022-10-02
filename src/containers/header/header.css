@@ -1,0 +1,69 @@
+.kirinti_header{
+    display: flex;
+}
+.kirinti_header-content{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+
+}
+.kirinti_header-content h1{
+    position: absolute;
+    width: 700px;
+    height: 255px;
+    left: 136px;
+    top: 216px;
+
+   font-family: 'Manrope';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 62px; 
+   line-height: 75px;
+   letter-spacing: -0.05em;
+
+   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+
+}
+.kirinti_header-content p{
+    position: absolute;
+    width: 554px;
+    height: 227px; 
+    left: 138px;
+    top: 474px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #81AFDD;
+    
+}
+
+.kirinti_header-image{
+   flex:1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.kirinti_header-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:050px){
+    .kirinti_header{
+        flex-direction: column;
+    }
+}
