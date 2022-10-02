@@ -42,7 +42,6 @@
     background: rgb(2, 69, 135);
     box-shadow: 0 0 1.25rem rgb(255 0 0 / 10%);
     border-radius: 2rem;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -221,6 +220,7 @@
 #search-button {
     width: 64px;
     height: 64px;
+    cursor: pointer;
     background-color: transparent;
     border-width: 0px;
     border-color: white;
