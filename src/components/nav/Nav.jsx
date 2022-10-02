@@ -4,7 +4,7 @@ import './nav.css';
 import logo from '../../assets/logo.png';
 import { useWeb3React } from '@web3-react/core';
 import { injected } from '../connector/injected';
-import { useEffect, } from 'react';
+import { useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
